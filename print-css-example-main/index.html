@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saipan Island Zoo</title>
+
+    <!-- moved styles to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Decorative title font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" role="navigation" aria-label="Primary">
+            <a href="#" class="brand">
+                <!-- remove width/height attributes so CSS controls sizing -->
+                <img class="logo" src="images/saipan-zoo-logo.jpg" alt="Saipan Island Zoo logo">
+
+                <!-- stack title + slogan -->
+                <div class="brand-text">
+                    <span class="brand-title">Saipan Island Zoo</span>
+                    <span class="brand-slogan">The Wild Side of Paradise</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- simple hamburger -->
+                <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect y="1" width="22" height="2" rx="1" fill="#111" />
+                    <rect y="6" width="22" height="2" rx="1" fill="#111" />
+                    <rect y="11" width="22" height="2" rx="1" fill="#111" />
+                </svg>
+            </button>
+
+            <ul id="primary-navigation" class="nav-list" role="menubar">
+                <li role="none"><a role="menuitem" href="#site-title">Home</a></li>
+                <li role="none"><a role="menuitem" href="#exhibits">Exhibits</a></li>
+                <li role="none"><a role="menuitem" href="#visit">Visit</a></li>
+                <li role="none"><a role="menuitem" href="#conservation">Conservation</a></li>
+                <li role="none"><a role="menuitem" class="cta" href="#get-started">Buy tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article id="home" aria-labelledby="site-title">
+            <header class="hero">
+                <div class="hero-text">
+                    <h1 id="site-title">Saipan Island Zoo</h1>
+                    <p class="lead">
+                        Discover the plants and animals of Saipan and the Northern Marianas. Family-friendly exhibits,
+                        guided tours, and conservation programs focused on island ecosystems.
+                    </p>
+                    <p class="hero-actions">
+                        <a class="cta" href="#get-started">Buy tickets</a>
+                        <a class="btn-muted" href="#visit">Visit info</a>
+                    </p>
+                </div>
+
+                <figure class="hero-figure" aria-hidden="true">
+                    <img src="images/saipan-zoo-hero.jpg" alt="Visitors at Saipan Island Zoo">
+                </figure>
+            </header>
+
+            <section id="exhibits" class="section">
+                <h2 id="exhibits-title">Exhibits</h2>
+                <p class="muted">Explore habitats and species that are native to Saipan and Micronesia, plus a hands-on marine touchpool.</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Island Wildlife</h3>
+                        <p class="muted">See mammals, reptiles and invertebrates that call Saipan home.</p>
+                        <ul>
+                            <li>Mariana fruit bat (flying fox)</li>
+                            <li>Native lizards and geckos</li>
+                            <li>Butterfly and insect displays</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Marine Touchpool</h3>
+                        <p class="muted">Interactive tidepool environment with local marine species.</p>
+                        <ul>
+                            <li>Hermit crabs and small crustaceans</li>
+                            <li>Shallow-water fish and sea cucumbers</li>
+                            <li>Educational tidepool talks daily</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Aviary & Birdwatching</h3>
+                        <p class="muted">A sheltered aviary highlighting island birds and conservation efforts.</p>
+                        <ul>
+                            <li>Local shorebirds and endemic species</li>
+                            <li>Daily feeding demonstrations</li>
+                            <li>Guided birdwatching walks</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visit" class="section">
+                <h2 id="visit-title">Visitor Information</h2>
+                <div class="visit-grid">
+                    <div>
+                        <h3>Hours & Admission</h3>
+                        <p class="muted">Open daily: 9:00 AM — 5:00 PM. Last entry at 4:15 PM.</p>
+                        <dl class="pricing">
+                            <dt>Adults</dt><dd>$12</dd>
+                            <dt>Children (4–12)</dt><dd>$6</dd>
+                            <dt>Under 4</dt><dd>Free</dd>
+                        </dl>
+
+                        <h3>Directions</h3>
+                        <p class="muted">Saipan Island Zoo is located near the central nature reserve. Free parking is available on-site. Public transit stops nearby.</p>
+
+                        <h3>Tours & Programs</h3>
+                        <p class="muted">Guided tours and school programs are available by reservation. Contact our education team for bookings.</p>
+                    </div>
+
+                    <aside class="quick-info" aria-labelledby="quick-info-title">
+                        <h4 id="quick-info-title">Quick Info</h4>
+                        <p class="muted"><strong>Address:</strong><br>Saipan Island Zoo, Middle Rd, Saipan</p>
+                        <p class="muted"><strong>Phone:</strong><br>+1 (670) 555-0123</p>
+                        <p class="muted"><strong>Email:</strong><br><a href="mailto:info@saipanzoo.example">info@saipanzoo.example</a></p>
+                        <p><a class="link" href="https://maps.google.com?q=Saipan" target="_blank" rel="noopener">Open in Maps</a></p>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="conservation" class="section">
+                <h2 id="conservation-title">Conservation & Education</h2>
+                <p class="muted">The Saipan Island Zoo runs local conservation programs aimed at protecting island habitats and supporting native species. Learn about volunteer opportunities and research partnerships.</p>
+
+                <ul class="conservation-list">
+                    <li class="small-card">
+                        <strong>Habitat Restoration</strong>
+                        <div class="muted">Planting native trees and removing invasive plants.</div>
+                    </li>
+                    <li class="small-card">
+                        <strong>Species Monitoring</strong>
+                        <div class="muted">Partnering with researchers to track populations.</div>
+                    </li>
+                    <li class="small-card">
+                        <strong>Education</strong>
+                        <div class="muted">Workshops, school visits, and community events.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="gallery" class="section">
+                <h2 id="gallery-title">Gallery</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-item"><img src="images/gallery-1.jpg" alt="Mariana fruit bat resting"></figure>
+                    <figure class="gallery-item"><img src="images/gallery-2.jpg" alt="Children at marine touchpool"></figure>
+                    <figure class="gallery-item"><img src="images/gallery-3.jpg" alt="Tropical aviary"></figure>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact-section">
+                <h2 id="contact-title">Contact & FAQs</h2>
+                <p class="muted">Have questions? Reach out or visit our help desk when you arrive.</p>
+
+                <h3>Frequently asked</h3>
+                <dl class="faq">
+                    <dt>Are pets allowed?</dt>
+                    <dd>Only service animals are permitted inside exhibit areas.</dd>
+
+                    <dt>Is the zoo wheelchair accessible?</dt>
+                    <dd>Yes — paths and main exhibits are accessible. Contact us for special accommodations.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        // Mobile toggle behaviour — collapse at <=1060px
+        (function(){
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('primary-navigation');
+            if(!btn || !nav) return;
+
+            function closeNav() {
+                nav.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+            function openNav() {
+                nav.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+
+            btn.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('open');
+                btn.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            // Close when clicking outside on small screens
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth > 1060) return;
+                if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                    if (nav.classList.contains('open')) closeNav();
+                }
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && nav.classList.contains('open')) closeNav();
+            });
+
+            // Ensure nav is reset if resizing to desktop
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1060 && nav.classList.contains('open')) {
+                    closeNav();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+horast
